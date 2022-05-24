@@ -23,8 +23,13 @@ namespace SalesWebMVC.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult About()
         {
+            ViewData["email"] = "rafaelainocencioo@gmail.com";
+            ViewData["linkedin"] = "https://www.linkedin.com/in/rafaela-montalvão-753560155/";
+            ViewData["github"] = "https://github.com/rafaelainocencio";
+            ViewData["Message"] = "App Web MVC de vendas";
+            ViewData["dev"] = "Rafaela Montalvão";
             return View();
         }
 
